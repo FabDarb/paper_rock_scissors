@@ -28,6 +28,7 @@ namespace paper_rock_scissors.Class.Game
         public int Round { get; set; } = 0;
         public string? UserName { get; set; }
         public int Score { get; set; } = 0;
+        public int TestMode { get; set; } = 3;
         public Game(MainWindow main)
         {
             Main = main;
@@ -44,7 +45,12 @@ namespace paper_rock_scissors.Class.Game
                 Timer.Stop();
                 Choose();
                 CanTakePicture = true;
-                ++Round;
+                if(TestMode <= 0)
+                {
+                    ++Round;
+                }
+                
+
             }
             if (Round == 20)
             {

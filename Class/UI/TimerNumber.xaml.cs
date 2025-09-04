@@ -23,7 +23,7 @@ namespace paper_rock_scissors.Class.UI
     /// </summary>
     public partial class TimerNumber : UserControl
     {
-        Dictionary<string, Brush> brushs = new Dictionary<string, Brush>() { {"1", Brushes.Green}, { "2", Brushes.Orange }, { "3", Brushes.Red }, {"4", Brushes.Black } };
+        Dictionary<string, Brush> brushs = new Dictionary<string, Brush>() { {"1", Brushes.Green}, { "2", Brushes.Orange }, { "3", Brushes.Red }, {"0", Brushes.Black } };
         public TimerNumber()
         {
             InitializeComponent();

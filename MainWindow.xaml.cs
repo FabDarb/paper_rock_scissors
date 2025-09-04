@@ -73,7 +73,16 @@ namespace paper_rock_scissors
                 {
                     Dispatcher.Invoke(() =>
                     {
-                        resultStr.Content = game.Controle();
+                        if(game.TestMode <= 0)
+                        {
+                            resultStr.Content = game.Controle();
+                        }
+                        else
+                        {
+                            --game.TestMode;
+                            resultStr.Content = "juste a test";
+                        }
+
                         SignView.Player = game.PlayerChoose;
                         SignView.IA = game.IAChoose;
                         LblScore.Content = $"Score : {game.Score}";
@@ -88,6 +97,7 @@ namespace paper_rock_scissors
                         game.Round = 0;
                         game.Count = 3;
                         game.Score = 0;
+                        game.TestMode = 3;
                     }
                 }
             });
