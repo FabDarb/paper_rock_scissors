@@ -1,0 +1,14 @@
+﻿<Window x:Class="paper_rock_scissors.UserForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:paper_rock_scissors"
+        mc:Ignorable="d"
+        Title="UserForm" Height="120" Width="410">
+    <Grid>
+        <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Margin="281,0,0,0" VerticalAlignment="Center" Height="64" Width="109" FontSize="20" Click="SaveBtn_Click"/>
+        <TextBox x:Name="TxtName" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="266" FontSize="48"/>
+
+    </Grid>
+</Window>

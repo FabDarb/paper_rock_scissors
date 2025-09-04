@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "paper_rock_scissors": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\cp-22fad\\source\\repos\\paper_rock_scissors - game"
+    }
+  }
+}

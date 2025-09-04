@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="paper_rock_scissors.Class.UI.SignViewer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:paper_rock_scissors.Class.UI"
+             xmlns:materialIcons="clr-namespace:Material.Icons.WPF;assembly=Material.Icons.WPF"
+             mc:Ignorable="d" 
+>
+    <Grid>
+        <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Fill="White" Width="360" Height="200" />
+        <materialIcons:MaterialIcon x:Name="IAIcon" Margin="0,40,180,118" Kind="Brain"/>
+        <materialIcons:MaterialIcon x:Name="PlayerIcon" Margin="0,118,180,40" Kind="User"/>
+        <Label x:Name="IASign" HorizontalContentAlignment="Center" Content="rien" HorizontalAlignment="Left" Margin="122,40,0,0" VerticalAlignment="Top" Width="194" FontSize="24" FontFamily="Arial"/>
+        <Label x:Name="PlayerSign" HorizontalContentAlignment="Center" Content="rien" HorizontalAlignment="Left" Margin="122,0,0,40" Width="194" FontSize="24" Height="42" VerticalAlignment="Bottom" FontFamily="Arial"/>
+    </Grid>
+</UserControl>
