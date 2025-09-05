@@ -84,10 +84,10 @@ namespace paper_rock_scissors.Class.Game
                 return "draw";
                 
             }
-            response = Algo(PlayerChoose, IAChoose, "player");
+            response = ControlePlayerWin(PlayerChoose, IAChoose, "player");
             if (response == "")
             {
-                response = Algo(IAChoose, PlayerChoose, "IA");
+                response = ControlePlayerWin(IAChoose, PlayerChoose, "IA");
                 Main.resultStr.Foreground = System.Windows.Media.Brushes.Red;
                 Main.startBtn.Background = System.Windows.Media.Brushes.Red;
             }
@@ -101,7 +101,7 @@ namespace paper_rock_scissors.Class.Game
             return response;
         }
 
-        private string Algo(string firstString, string secondString, string player)
+        private string ControlePlayerWin(string firstString, string secondString, string player)
         {
             if(firstString == "paper" && secondString == "rock" || firstString == "rock" && secondString == "scissors" || firstString == "scissors" && secondString == "paper")
             {
